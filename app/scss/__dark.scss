@@ -1,0 +1,56 @@
+@mixin dark {
+  $whiteColor: #fff;
+
+  transition: all .4s ease-in-out;
+  background: #27292d;
+
+  
+  .text__hero,
+  .container-text__suptitle,
+  .text__bigtitle,
+  .text__label,
+  .text__paragraph,
+  .text__suptitle,
+  .text__title,
+  .benefit-text,
+  .avatar-name,
+  .avatar-profesion
+  {
+    color: $whiteColor;
+  }
+
+  .header,
+  .types,
+  .navbar ul{
+    filter: invert(1);
+  }
+  
+  .slider__right,
+  .slider__left{
+    background-color: #383b40;
+  }
+
+  .btn{
+    background-color: #2d2f34;
+  }
+
+  .loader__container output{
+    color: #fff;
+  }
+
+  .clients{
+    background-color: #383b40;
+
+    &__icon{
+      filter: invert(1);
+    }
+  }
+  
+  .footer{
+    background-color: #1f2023;
+  }
+
+  .submit{
+  background: #303b40;
+  }
+}
